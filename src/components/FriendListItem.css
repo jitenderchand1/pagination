@@ -26,3 +26,7 @@
 button:focus {
   outline: 0 !important;
 }
+
+.checkbox-container{
+  padding-top: 10px;
+}

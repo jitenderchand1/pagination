@@ -11,8 +11,9 @@ class FriendList extends Component {
             return (
               <FriendListItem
                 key={index}
-                id={index}
+                id={friend.id}
                 name={friend.name}
+                gender={friend.gender}
                 starred={friend.starred}
                 {...this.props.actions} />
             );

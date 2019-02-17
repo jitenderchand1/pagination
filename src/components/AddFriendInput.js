@@ -30,8 +30,9 @@ class AddFriendInput extends Component {
 
   handleSubmit (e) {
     const name = e.target.value.trim();
+    const { totalFriends } = this.props;
     if (e.which === 13) {
-      this.props.addFriend(name);
+      this.props.addFriend(name, (totalFriends+1));
       this.setState({ name: '' });
     }
   }
